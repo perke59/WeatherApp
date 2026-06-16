@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Weather Dashboard</title>
+
+    <link href="contents/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contents/style.css">
+</head>
+
+<body>
+    <div class="overlay auth-page">
+        <div class="auth-card glass-card">
+            <h1>Weather Dashboard</h1>
+            <h2>Login</h2>
+
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input id="username" type="text" class="form-control" autocomplete="username" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" type="password" class="form-control" autocomplete="current-password" required>
+                </div>
+
+                <p id="authMessage" class="auth-message"></p>
+
+                <button type="submit" class="btn btn-primary w-100">
+                    Login
+                </button>
+            </form>
+
+            <p class="auth-switch">
+                No account yet?
+                <a href="/register">Create one</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="contents/auth.js"></script>
+</body>
+
+</html>
